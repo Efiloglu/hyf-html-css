@@ -1,0 +1,165 @@
+body {
+  font-family: Helvetica, Arial;
+  font-size: 16px;
+}
+
+body > header {
+  
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 4rem;
+ 
+}
+
+body > header img {
+  width: 50%;
+  padding-top: 0px;
+  margin-top:-7%
+}
+
+
+section#me {
+    clear: both;
+    text-align: center;
+    border: dashed 2px #ccc;
+    border-radius: 3px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}  
+
+section#me img.photo {
+    border-radius: 50%;
+    float: top;
+    margin-bottom: 2em;
+    width: 150px;
+}
+
+section#me p {
+  font-family: serif;
+  font-size: 100%;
+  font-style: italic; 
+  
+}
+main section { 
+  border: 3px solid rgb(182, 177, 177);
+  line-height:2;
+  width: 780px;
+  margin: 0 0 0 0;
+  position: relative;
+  right:auto;
+  left: 19%;
+ 
+}
+
+
+ aside {
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+    margin: 0 0 50px 0;
+}
+
+section h2 {
+  border-bottom: solid 1px #ccc;
+}
+
+section#aboutme{
+  text-align: center;
+  font-family:Arial,'Times New Roman', serif;
+  font-size: 16px; 
+  
+}
+#aboutme p{
+
+ margin-left: 50px;
+ margin-right: 50px;
+}
+
+section#educationtitle {
+  border: 3px solid rgb(182, 177, 177);
+  line-height:2;
+}
+section#educationtitle img.education {
+  background-color: rgb(216, 213, 213);
+  float: right;
+  margin-left: 2rem;
+  width: 400px;
+  height: 224px;
+  border-left: 3px solid rgb(182, 177, 177);
+}
+section#work-experience {
+  border: 3px solid rgb(182, 177, 177); 
+  height: 100%;
+  line-height:2;
+}
+section#work-experience img.work {
+  background-color: rgb(216, 213, 213);
+  float: left;
+  margin-right: 2rem;
+  width: 375px;
+  height: 192px;
+  border-left: 3px solid rgb(182, 177, 177);
+}
+section#languages {
+  border: 3px solid rgb(182, 177, 177);
+  height: 100%;
+  line-height: 2;
+}
+section#languages img.language {
+  background-color: rgb(216, 213, 213);
+  float: right;
+  margin-left: 2rem;
+  width: 400px;
+  height: 192px;
+  
+  border-left: 3px solid rgb(182, 177, 177);
+}
+
+aside {
+  background-color: #f0f0f0;
+  border: dashed 2px #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+}
+
+aside h2 {
+  margin: 0 0 1em 0;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+aside ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+aside ul li a {
+  color: #000;
+  display: block;
+  padding: 5px 0;
+}
+
+aside ul li a:hover {
+  background-color: #ddd;
+  color: teal;
+}
+
+body > footer {
+  border-top: dotted 5px #ccc;
+  color: #666;
+  margin-top: 50px;
+  padding: 0.5rem;
+  text-align: center;
+}
