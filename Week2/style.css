@@ -1,0 +1,177 @@
+/* .....Homework2.....*/
+/* .....Hack Your Future Belgium.....*/
+/* .....Mesut Efiloglu.....*/
+
+
+html {
+    text-align: center;
+}
+main {
+    margin: 0 1% 0 1%;
+}
+
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    color: yellow;
+    background-color: rgb(119, 11, 11);
+    border: 2px solid yellow;
+    border-radius: 10px;
+    padding: 0.1%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    color: red;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    letter-spacing: 9px;
+    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 0, 0), rgb(255, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 4s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+
+h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+    text-transform: capitalize;
+    text-decoration-line: underline;
+}
+
+@keyframes animate {
+  0% {
+    background-position: -300%;
+  }
+  100% {
+    background-position: 300%;
+  }
+}
+/* .....Grid with Floats....*/
+#grid-floats {
+    float: left;
+    background-color: rgba(255, 241, 119, 0.61);
+    padding: 0 1% 0 1%;
+    margin-bottom: 2em;
+    margin-top: 0%;
+}
+
+.grid-item {
+    float: left;
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 1%;
+
+}
+#grid-floats .grid-item{
+    box-shadow: 3px 3px 3px 3px rgb(252, 0, 0);
+}
+
+.grid-item:nth-child(n+12){
+    max-width: 29%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 60%;
+}
+
+p{
+    font-weight: bold;
+}
+
+.grid-item:hover h3 {
+    color:red;
+}
+
+.grid-item:hover{
+    transform: scale(1.03);
+}
+/* .....Gride wifh Flex.....*/
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(179, 178, 176);
+    justify-content: space-around;
+    padding-top: 1%;
+    padding-left: 0%;
+    padding-bottom: 1%;
+}
+
+#grid-flex .grid-item {
+    box-shadow: 3px 3px 3px 3px rgb(14, 13, 13);
+}
+/* .....For mobile phones.....*/
+@media screen and (max-width:480px) {
+    header {
+        font-size: 10px;
+        letter-spacing: 5px;
+        width: 80%;
+    }
+    .grid-item {
+        max-width: 46%;
+        min-height: 760px;
+    }
+
+    .grid-item:nth-child(1) {
+        max-width: 96%;
+        min-height: 760px;
+    }
+    
+    .grid-item:nth-child(n+12) {
+        max-width: 46%;
+        min-height: 760px;
+    }
+
+    .grid-item:nth-child(14) {
+        max-width: 96%;
+        min-height: 760px;
+    }
+}
+/* .....For tablets.....*/
+@media screen and (min-width: 481px) and (max-width:768px) {
+    header {
+        font-size: 16px;
+        letter-spacing: 10px;
+        width: 80%;
+       
+    }
+    .grid-item {
+        max-width: 29%;
+        min-height: 750px;
+    }
+
+    .grid-item:nth-child(n+1) {
+        max-width:46% ;
+        min-height: 750px;
+    }
+}
+
+/* .....For desktops.....*/
+@media screen and (min-width: 769px) {
+    .grid-item {
+        max-width: 21%;
+        min-height: 600px;
+    }
+
+    .grid-item:nth-child(1) {
+        max-width: 46%;
+        min-height: 600px;
+    }
+
+}
